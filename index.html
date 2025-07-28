@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Telebachillerato Comunitario La Rinconada</title>
+  <link rel="stylesheet" href="PaginaWeb2.css" />
+</head>
+<body>
+  <header>
+    <div class="container header-container">
+      <nav aria-label="Primary navigation" class="nav-bar">
+        <div class="logo" tabindex="0">
+          <img src="Telebachilleratos.png" alt="Logo Telebachillerato" style="height: 50px; margin-right: 10px; vertical-align: middle;">
+          Telebachillerato La Rinconada
+        </div>
+        <div class="nav-links" role="list">
+          <a href="#about" class="active" role="listitem">Inicio</a>
+          <a href="#programs" role="listitem">Programas</a>
+          <a href="#facilities" role="listitem">Instalaciones</a>
+          <a href="#enrollment" role="listitem">Inscripción</a>
+          <a href="#contact" role="listitem">Contacto</a>
+        </div>
+        <button id="theme-toggle" aria-label="Cambiar tema claro/oscuro" title="Cambiar tema claro/oscuro" class="theme-toggle-button" type="button">
+          <span id="theme-icon" aria-hidden="true">🌙</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" role="banner">
+      <div class="container hero-container">
+        <img src="Telebachilleratos.png" alt="Logo Telebachillerato" class="hero-image">
+        <h1>Bienvenido al Telebachillerato Comunitario La Rinconada</h1>
+      <p class="hero-subtext">Una institución pública dedicada a la educación media superior en Calvillo, Aguascalientes, comprometida con la formación integral de jóvenes.</p>
+      <button class="cta-button" onclick="scrollToSection('enrollment')">Inscríbete Ahora</button>
+      </div>
+    </section>
+
+
+    <section id="about" class="info-section" tabindex="-1" aria-labelledby="about-header">
+      <div class="container">
+        <h2 id="about-header" class="section-header">Sobre Nosotros</h2>
+        <div class="cards">
+          <article class="card" tabindex="0" aria-label="Misión y Visión">
+            <h3>Misión y Visión</h3>
+            <p>Nos comprometemos a ofrecer una educación integral, ética y humana, promoviendo valores que transforman la sociedad y preparan a nuestros estudiantes para los retos del futuro.</p>
+          </article>
+          <article class="card" tabindex="0" aria-label="Historia">
+            <h3>Nuestra Historia</h3>
+            <p>Fundado para brindar educación media superior en una zona rural de Calvillo, desde entonces ha sido un pilar educativo para la comunidad, impulsando desarrollo académico y cultural.</p>
+          </article>
+          <article class="card" tabindex="0" aria-label="Valores">
+            <h3>Valores</h3>
+            <ul>
+              <li>Responsabilidad</li>
+              <li>Respeto</li>
+              <li>Inclusión</li>
+              <li>Innovación</li>
+              <li>Excelencia</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="conocenos" id="conocenos">
+  <div class="container conocenos-container">
+    <h2 class="section-header">Conócenos</h2>
+    <div class="image-grid">
+      <img src="ImagenTBC1.jpg" alt="Imagen 1" class="grid-image">
+      <img src="ImagenTBC2.jpg" alt="Imagen 2" class="grid-image">
+      <img src="ImagenTBC3.jpg" alt="Imagen 3" class="grid-image">
+      <img src="ImagenTBC4.jpg" alt="Imagen 4" class="grid-image">
+      <img src="ImagenTBC5.jpg" alt="Imagen 5" class="grid-image">
+      <img src="ImagenTBC6.jpg" alt="Imagen 6" class="grid-image">
+      <img src="ImagenTBC7.jpg" alt="Imagen 7" class="grid-image">
+      <img src="ImagenTBC8.jpg" alt="Imagen 8" class="grid-image">
+      <img src="ImagenTBC9.jpg" alt="Imagen 9" class="grid-image">
+      <img src="ImagenTBC10.jpg" alt="Imagen 10" class="grid-image">
+    </div>
+  </div>
+</section>
+
+<!-- Modal -->
+<div id="imageModal" class="modal" style="display: none;"> <!-- Oculta el modal por defecto -->
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="modalImage" alt="" /> <!-- Atributo alt vacío -->
+</div>
+
+
+
+    <section id="programs" class="info-section" tabindex="-1" aria-labelledby="programs-header">
+      <div class="container">
+        <h2 id="programs-header" class="section-header">Programas Académicos</h2>
+        <div class="cards">
+          <article class="card" tabindex="0" aria-label="Matemáticas">
+            <h3>Matemáticas y Ciencias Experiementales</h3>
+            <p>Este programa busca desarrollar el pensamiento lógico y analítico en los estudiantes, mediante el estudio de las matemáticas, la física, la química y la biología, fomentando la experimentación y la observación como herramientas fundamentales para la comprensión del mundo natural.</p>
+          </article>
+          <article class="card" tabindex="0" aria-label="Ciencias Naturales">
+            <h3>Ciencias Sociales y Humanidades</h3>
+            <p>Aquí se promueve el entendimiento de la sociedad, la cultura y la historia, desarrollando habilidades críticas y éticas para la convivencia, además de fortalecer el respeto por la diversidad y el compromiso social.</p>
+          </article>
+          <article class="card" tabindex="0" aria-label="Comunicación y Humanidades">
+            <h3>Comunicación</h3>
+            <p>Este programa está diseñado para fortalecer las habilidades comunicativas, tanto orales como escritas, mediante el desarrollo de la expresión oral y escrita, la comprensión lectora, el aprendizaje de una lengua adicional al español y el uso de herramientas de la cultura digital, con el objetivo de mejorar la capacidad de expresarse, argumentar y comprender mensajes en diversos medios y contextos.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="facilities" class="info-section" tabindex="-1" aria-labelledby="facilities-header">
+      <div class="container">
+        <h2 id="facilities-header" class="section-header">Instalaciones</h2>
+        <div class="cards">
+          <article class="card" tabindex="0" aria-label="Salones de clase">
+            <h3>Salones de Clase</h3>
+            <p>3 salones equipados para actividades académicas, creando espacios acogedores para el aprendizaje.</p>
+          </article>
+          <article class="card" tabindex="0" aria-label="Salón de cómputo">
+            <h3>Salón de Cómputo</h3>
+            <p>Único salón con computadoras donde los alumnos pueden desarrollar habilidades digitales.</p>
+          </article>
+          <article class="card" tabindex="0" aria-label="Pateo cívico">
+            <h3>Pateo Cívico</h3>
+            <p>Amplio espacio al aire libre para actividades cívicas, deportivas y recreativas.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="enrollment" class="info-section" tabindex="-1" aria-labelledby="enrollment-header">
+      <div class="container">
+        <h2 id="enrollment-header" class="section-header">Proceso de Inscripción</h2>
+        <div class="cards">
+          <article class="card" tabindex="0" aria-label="Cómo inscribirse">
+            <h3>Cómo Inscribirse</h3>
+            <p>Contacta directamente al director <strong>José de Jesús Hernández Serna</strong> toda la información necesaria se encuentra en el apartado de <strong>Contacto</strong> ahí encontraras su <strong>Teléfono y Correo</strong>.</p>
+            <p>Las inscripciones y dudas se realizan exclusivamente con el director para un mejor servicio.</p>
+          </article>
+          <article class="card" tabindex="0" aria-label="Requisitos">
+            <h3>Requisitos</h3>
+            <ul>
+              <li>Certificado de secundaria terminado.</li>
+              <li>Acta de nacimiento.</li>
+              <li>CURP.</li>
+              <li>Comprobante de domicilio.</li>
+              <li>Fotografías tamaño infantil recientes.</li>
+            </ul>
+          </article>
+          <article class="card" tabindex="0" aria-label="Fechas importantes">
+            <h3>Fechas Clave</h3>
+            <ul>
+              <li>Inicio de inscripción: 1 de Agosto.</li>
+              <li>Entrega de documentos: 15 de Agosto.</li>
+              <li>Inicio de clases: 1 de Septiembre.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="info-section" tabindex="-1" aria-labelledby="contact-header">
+      <div class="container">
+        <h2 id="contact-header" class="section-header">Contacto</h2>
+        <div class="cards">
+          <article class="card" tabindex="0" aria-label="Dirección">
+            <h3>Dirección</h3>
+            <p>Privada Carretera A Presa de los Serna 13,<br/>La Rinconada, Calvillo, Aguascalientes CP 20862.</p>
+          </article>
+          <article class="card" tabindex="0" aria-label="Teléfono y correo">
+            <h3>Teléfono y Correo</h3>
+            <p><strong>Tel:</strong> 495 107 2767<br /><strong>Email:</strong> <a href="mailto:chuyhernandez_34@hotmail.com" class="link-primary">chuyhernandez_34@hotmail.com</a></p>
+          </article>
+          <article class="card" tabindex="0" aria-label="Redes Sociales">
+            <h3>Redes Sociales</h3>
+            <p>Síguenos en Facebook, Twitter e Instagram para estar al día con novedades y eventos.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-container">
+      &copy; 2024 Telebachillerato Comunitario La Rinconada. Todos los derechos reservados.
+    </div>
+  </footer>
+
+  <script src="PaginaWeb3.js"></script>
+  <script>
+    // Theme toggle: default/dark mode with persistence
+    const themeToggleButton = document.getElementById('theme-toggle');
+    const themeIcon = document.getElementById('theme-icon');
+    const rootElement = document.documentElement;
+
+    function setTheme(theme) {
+      if (theme === 'dark') {
+        rootElement.setAttribute('data-theme', 'dark');
+        themeIcon.textContent = '☀️'; // sun icon for light mode toggle
+        themeToggleButton.setAttribute('aria-label', 'Cambiar a modo claro');
+        themeToggleButton.title = 'Cambiar a modo claro';
+      } else {
+        rootElement.removeAttribute('data-theme');
+        themeIcon.textContent = '🌙'; // moon icon for dark mode toggle
+        themeToggleButton.setAttribute('aria-label', 'Cambiar a modo oscuro');
+        themeToggleButton.title = 'Cambiar a modo oscuro';
+      }
+      localStorage.setItem('theme', theme);
+    }
+
+    themeToggleButton.addEventListener('click', () => {
+      const currentTheme = rootElement.getAttribute('data-theme');
+      if (currentTheme === 'dark') {
+        setTheme('light');
+      } else {
+        setTheme('dark');
+      }
+    });
+
+    // Initialize theme from localStorage or prefers-color-scheme
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+      setTheme(savedTheme);
+    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      setTheme('dark');
+    } else {
+      setTheme('light');
+    }
+  </script>
+</body>
+</html>
